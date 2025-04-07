@@ -1,0 +1,36 @@
+body {
+    align-items: flex-start;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+main > div {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+main div div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    border: 2px solid var(--gray-1);
+}
+
+main > div:last-child {
+    margin-top: 20px;
+    border: 2px solid var(--gray-1);
+    border-radius: 4px;
+    padding: 20px;
+    min-height: 500px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
