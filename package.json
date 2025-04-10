@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "sass --watch ./:build/stylesheets/"
+    "start": "sass --watch ./:build/"
   },
   "devDependencies": {
     "sass": "^1.86.3"
