@@ -60,3 +60,55 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+      text-align: center;
+    }
+  }
+
+  table {
+    border: 0;
+    width: 100%;
+
+    thead {
+      visibility: hidden;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    tr {
+      border: 3px solid #ddd;
+      border-radius: 4px;
+      display: block;
+      margin-bottom: .625em;
+    }
+
+    td {
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .8em;
+      text-align: right;
+      padding: 0.5rem !important;
+
+      &::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
