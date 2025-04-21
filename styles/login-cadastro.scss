@@ -71,6 +71,23 @@ body main form button:hover {
     opacity: 0.8;
 }
 
+@media screen and (max-width: 425px) {
+  html {
+      font-size: 14px;
+  }
+
+  body main form {
+      width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 /* Change the white to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
