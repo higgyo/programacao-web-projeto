@@ -12,18 +12,18 @@
 <body>
   <main>
     <h1>Cadastro</h1>
-    <form action="">
+    <form action="/login">
       <label for="nome">Nome</label>
-      <input id="nome" type="text" placeholder="João">
+      <input id="nome" type="text" placeholder="João" required>
       <label for="email">E-mail</label>
-      <input id="email" type="email" placeholder="example@example.com.br">
+      <input id="email" type="email" placeholder="example@example.com.br" required>
       <label for="senha">Senha</label>
-      <input id="senha" type="password" placeholder="•••••••••••">
+      <input id="senha" type="password" placeholder="•••••••••••" required>
       <label for="confirmacao-senha">Confirmação</label>
-      <input id="confirmacao-senha" type="password" placeholder="•••••••••••">
-      <a href="">Já possui uma conta?</a>
+      <input id="confirmacao-senha" type="password" placeholder="•••••••••••" required>
       <button>Cadastrar-se</button>
     </form>
+    <a href="/login">Já possui uma conta? Faça login!</a>
   </main>
 </body>
 

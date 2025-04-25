@@ -39,7 +39,7 @@ body main form input:focus {
   border-color: var(--gray-2);
 }
 
-body main form a {
+body main form a, body main a {
   margin-top: 8px;
   color: var(--green-0);
   text-decoration: none;
@@ -47,7 +47,7 @@ body main form a {
   font-weight: 600;
 }
 
-body main form a:hover {
+body main form a:hover, body main a:hover {
   text-decoration: underline;
 }
 
@@ -69,6 +69,10 @@ body main form button {
 
 body main form button:hover {
   opacity: 0.8;
+}
+
+body main > a {
+  margin-top: 1.25rem;
 }
 
 @media screen and (max-width: 425px) {
